@@ -289,7 +289,7 @@
         <!-- Copyright -->
         <div class="container border-top border-secondary pt-4">
             <p class="mb-0 text-center text-white">
-                &copy; 2025 Luminous She Initiatives. All Rights Reserved.
+                &copy; <span id="year"></span> Luminous She Initiatives. All Rights Reserved.
             </p>
         </div>
     </footer>
@@ -312,6 +312,10 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script>
+        // Simple script to update copyright year
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 
 </html>
